@@ -24,6 +24,6 @@ static PyMethodDef ScryptMethods[] = {
     { NULL, NULL, 0, NULL }
 };
 
-PyMODINIT_FUNC initltc_scrypt(void) {
-    (void) Py_InitModule("ltc_scrypt", ScryptMethods);
+PyMODINIT_FUNC initbynd_scrypt(void) {
+    (void) Py_InitModule("bynd_scrypt", ScryptMethods);
 }

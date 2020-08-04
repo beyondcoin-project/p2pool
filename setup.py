@@ -30,10 +30,10 @@ try:
     sys.argv[1:] = ['py2exe']
     setup(name='p2pool',
         version=version,
-        description='Peer-to-peer Bitcoin mining pool',
-        author='Forrest Voight',
-        author_email='forrest@forre.st',
-        url='http://p2pool.forre.st/',
+        description='Peer-to-peer Beyondcoin mining pool',
+        author='Beyondtoshi',
+        author_email='support@beyondcoin.io',
+        url='http://p2pool.beyondcoin.io/',
         data_files=[
             ('', ['README.md']),
             ("Microsoft.VC90.MFC", mfcfiles),
@@ -50,7 +50,7 @@ try:
         options=dict(py2exe=dict(
             bundle_files=bundle,
             dll_excludes=['w9xpopen.exe', "mswsock.dll", "MSWSOCK.dll"],
-            includes=['twisted.web.resource', 'ltc_scrypt'] + extra_includes,
+            includes=['twisted.web.resource', 'bynd_scrypt'] + extra_includes,
         )),
         zipfile=None,
     )
